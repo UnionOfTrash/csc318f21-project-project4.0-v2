@@ -1,0 +1,8 @@
+.card{
+  margin: 0 auto;
+  width: 900px;
+}
+.card-body {
+  display: flex;
+  justify-content: space-between;
+}

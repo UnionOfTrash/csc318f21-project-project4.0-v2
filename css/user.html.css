@@ -1,0 +1,28 @@
+.card {
+  color: blueviolet;
+  margin: 5px;
+  border: 2px solid darkcyan;
+}
+#see_detailed_calendar {
+  margin-top: 20px;
+}
+#mycalendar {
+  margin: 20px;
+  color: darkcyan;
+  border-bottom: 2px solid darkcyan;
+}
+#mycourses {
+  margin: 20px;
+  color: darkgreen;
+  border-bottom: 2px solid darkgreen;
+}
+#mycareer {
+  margin: 20px;
+  color: blueviolet;
+  border-bottom: 2px solid blueviolet;
+}
+#myevents {
+  margin: 20px;
+  color: crimson;
+  border-bottom: 2px solid crimson;
+}

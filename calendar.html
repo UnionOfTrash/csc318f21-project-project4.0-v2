@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- head -->
+
+<head>
+  <title> My Calendar </title>
+
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Fonts -->
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:400,900,700,300' type='text/css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700' type='text/css'>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/calendar.html.css">
+  <link rel="stylesheet" href="css/calendar_calendar.html.css">
+
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+</head>
+
+<!-- body -->
+
+<body>
+  <!-- navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightskyblue;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Project 4.0</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="CourseListPage/index.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="CareerPage/career.html">Career</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Calendar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="user.html"><i class="bi bi-person-square"></i> Welcome, Bob!</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid" id="functionbar">
+    <div class="row">
+      <div class="col">
+        <div class="dropdown">
+          <button class="btn btn-info dropdown-toggle w-100" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-funnel-fill"></i>
+            Filter
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          </ul>
+        </div>
+      </div>
+      <div class="col">
+        <button class="btn btn-info w-100">
+          <i class="bi bi-calendar-date-fill"></i>
+          My Event
+        </button>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col">
+              <i class="bi bi-clock-fill"></i>
+            </div>
+            <div class="col">
+              <p>MINDSHOP™| Create Better Products by Design Thinking</p>
+            </div>
+            <div class="col">
+              <p style="color: gray;">Nov. 20th</p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col">
+              <i class="bi bi-clock-fill"></i>
+            </div>
+            <div class="col">
+              <p>FRONT END Training - MERN Stack | Web Development | Live Project Exposure</p>
+            </div>
+            <div class="col">
+              <p style="color: gray;">Dec. 2nd</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <button class="btn btn-info w-100">
+          <i class="bi bi-flag-fill"></i>
+          My Study Goal
+        </button>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col">
+              <i class="bi bi-square-fill" style="color: red;"></i>
+            </div>
+            <div class="col">
+              <p>Python Begineer</p>
+            </div>
+            <div class="col">
+              <p style="color: gray;">Nov. 16th</p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col">
+              <i class="bi bi-square"></i>
+            </div>
+            <div class="col">
+              <p>Python Medium</p>
+            </div>
+            <div class="col">
+              <p style="color: gray;">Nov. 17th</p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col">
+              <i class="bi bi-square"></i>
+            </div>
+            <div class="col">
+              <p>Linux</p>
+            </div>
+            <div class="col">
+              <p style="color: gray;">Nov. 19th</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="calendar" id="calendar_first">
+      <div class="calendar_header">
+        <button class="switch-month switch-left"><i class="bi bi-caret-left-fill"></i></button>
+        <h2></h2>
+        <button class="switch-month switch-right"><i class="bi bi-caret-right-fill"></i></button>
+      </div>
+      <div class="calendar_weekdays"></div>
+      <div class="calendar_content"></div>
+    </div>
+    <script src="js/calendar.js"></script>
+  </div>
+</body>
+
+</html>
