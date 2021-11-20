@@ -72,26 +72,32 @@
                 </div>
 
                 <div style="display: flex; justify-content: center;">
-                <div class="dropdown" style="margin-right: 5px; width: 195px;">
-                    <button class="btn btn-outline-secondary dropdown-toggle" style="width: 180px;"
+                <div class="dropdown" style="margin-right: 5px; width: 300px;">
+                    <button class="btn btn-outline-secondary dropdown-toggle" style="width: 300px; overflow-x: hidden;"
                             type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         Select a job
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Web app developer (frontend)</a></li>
-                        <li><a class="dropdown-item" href="#">Web app developer (backend)</a></li>
-                        <li><a class="dropdown-item" href="#">Software developer</a></li>
+                        <li><a class="dropdown-item" href="#"
+                            onclick="document.getElementById('dropdownMenuButton1').innerText = 'Web app developer (frontend)'">Web app developer (frontend)</a></li>
+                        <li><a class="dropdown-item" href="#"
+                            onclick="document.getElementById('dropdownMenuButton1').innerText = 'Web app developer (backend)'">Web app developer (backend)</a></li>
+                        <li><a class="dropdown-item" href="#"
+                            onclick="document.getElementById('dropdownMenuButton1').innerText = 'Software developer'">Software developer</a></li>
                     </ul>
                 </div>
-                <div class="dropdown" style="margin-right: 5px; width: 195px;">
-                    <button class="btn btn-outline-secondary dropdown-toggle" style="width: 180px;"
-                            type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="dropdown" style="margin-right: 5px; width: 300px;">
+                    <button class="btn btn-outline-secondary dropdown-toggle" style="width: 300px; overflow-x: hidden;"
+                            type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                         Select a job
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Web app developer (frontend)</a></li>
-                        <li><a class="dropdown-item" href="#">Web app developer (backend)</a></li>
-                        <li><a class="dropdown-item" href="#">Software developer</a></li>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item" href="#"
+                            onclick="document.getElementById('dropdownMenuButton2').innerText = 'Web app developer (frontend)'">Web app developer (frontend)</a></li>
+                        <li><a class="dropdown-item" href="#"
+                            onclick="document.getElementById('dropdownMenuButton2').innerText = 'Web app developer (backend)'">Web app developer (backend)</a></li>
+                        <li><a class="dropdown-item" href="#"
+                            onclick="document.getElementById('dropdownMenuButton2').innerText = 'Software developer'">Software developer</a></li>
                     </ul>
                 </div>
                 <button type="button" class="btn btn-primary"
